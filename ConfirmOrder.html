@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank you</title>
+  </head>
+
+  <body style="background: #f5f5f5; width: 100%">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./alone.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <div style="height: 10px"></div>
+
+    <div style="margin-left: auto; margin-right: auto; width: 90%">
+      <figure
+        class="image cntr"
+        style="width: 70%; margin-top: 2%; max-width: 300px"
+      >
+        <img src="./Assets/RODE.png" />
+      </figure>
+
+      <figure
+        id="frm"
+        class="cntr"
+        style="width: 90%; margin-top: 2%; max-width: 500px; min-width: 280px"
+      >
+        <h2 style="font-size: 200%">Welcome to the Electic world!</h2>
+        <p>
+          Your order has been confirmed , Our staff will get in contact with you
+          soon.
+        </p>
+        <button
+          type="button"
+          style="width: 40%; height: 5%"
+          class="btn btn-primary"
+          onclick="ok()"
+        >
+          OK
+        </button>
+      </figure>
+
+      <script>
+        function ok() {
+          window.open("./index.html", "_self");
+        }
+      </script>
+    </div>
+  </body>
+</html>

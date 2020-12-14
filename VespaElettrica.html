@@ -1,0 +1,270 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VESPA ELETTRICA</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./alone.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Teko:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="cvrbg">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="spaceworks_nav" href="./index.html">RODE</a>
+    </nav>
+    <div class="vesor" id="ore">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div style="height: 30vh"></div>
+          </div>
+          <div class="col-sm-4" style="margin-top: 5%">
+            <div class="cakesub">VESPA</div>
+            <div class="cake">ELETTRICA</div>
+            <div class="sidebd box">
+              The new mobility solution according to the most elegant and
+              beloved two-wheeled brand in the world that takes a step into the
+              future in complete consistency with the values that have
+              accompanied its history.
+              <div>
+                <button
+                  type="button"
+                  style="margin-top: 20%"
+                  class="btn btn-dark"
+                  onclick="order()"
+                >
+                  ORDER NOW
+                </button>
+                <button
+                  type="button"
+                  style="margin-top: 20%"
+                  class="btn btn-primary"
+                  onclick="back()"
+                >
+                  BACK
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container proddesk" id="adj">
+        <h3 id="spc" class="specPC">Specification</h3>
+        <div class="row">
+          <div class="col-sm-3">
+            <ul>
+              <li>
+                <h6>Battery</h6>
+                <p class="text-muted">
+                  Cells: premium 18650 lithium cells<br />
+                  Voltage (nominal): 51.8 V <br />
+                  Capacity: 50 Ah / 2.6 kWh<br />
+                  Features: Removable, can be charged when installed in bike or
+                  separately <br />
+                  Built in SoC indicator
+                </p>
+              </li>
+              <li>
+                <h6>Speed & range</h6>
+                <p class="text-muted">
+                  Explore: The ultimate mode during exploration. Limited to 45
+                  km/h with 3-4 hrs battery range<br />
+                  Excite: Enduro or active trail riding. 1-2 h riding time<br />
+                  Excel: Track and race mode, maximal torque and speed, riding
+                  time up to 1 h<br />
+                  Brake modes:<br />
+                  Freewheel<br />
+                  2-stroke motor brake with energy regeneration<br />
+                  4-stroke motor brake with energy regeneration<br />
+                  Features: Best-in-class power density and state-of-the-art
+                  motor control algorithms
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul>
+              <li>
+                <h6>Weight</h6>
+                <p class="text-muted">
+                  Dry 62 kg + battery 17 kg <br />
+                  Max permittable load 180 kg (bike + battery + rider)
+                </p>
+              </li>
+              <li>
+                <h6>Speed & range</h6>
+                <p class="text-muted">
+                  Top speed: +90 km/h / +56 mph <br />
+                  Range: Trail/Enduro riding: 3 hours* <br />
+                  Mixed city riding (WMTC-II): 83km* <br />
+                  High speed riding (70km/h): 35km*
+                </p>
+              </li>
+              <li>
+                <h6>Drivetrain</h6>
+                <p class="text-muted">
+                  Type: Direct drive, chain <br />
+                  Electric motor: Interior permanent magnet motor<br />
+                  Power: 10 kW <br />
+                  Torque (motor axle): 42 Nm <br />
+                  Torque (wheel): 252 Nm <br />
+                  Front sprocket: 12 teeth <br />
+                  Rear sprocket: 72 teeth <br />
+                  Chain/Belt: 420 chain with O-ring
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-3">
+            <ul>
+              <li>
+                <h6>Charging</h6>
+                <p class="text-muted">
+                  Type: External charger from standard 110 V/220 V outlets<br />
+                  0-80%: 2 hours<br />
+                  0-100%: 3 hours
+                </p>
+              </li>
+              <li>
+                <h6>Dimensions</h6>
+                <p class="text-muted">
+                  Wheel base: 1310 mm<br />
+                  Seat height: 910 mm<br />
+                  Ground clearance: 300 mm<br />
+                  Fork angle: 25&deg;<br />
+                  Trail: 87.4 mm<br />
+                  Offset: 22 mm in triple clamps, 36 mm in forks
+                </p>
+              </li>
+              <li>
+                <h6>Wheels & tires</h6>
+                <p class="text-muted">
+                  Hubs: Forged and CNC aluminium CAKE hubs with 25 mm axle<br />
+                  Rims: 19"x1.85&rdquo; custom designed 7116-T6 aluminium
+                  motorcycle rims<br />
+                  Tires: 19"x3.00" dual sport motorcycle tires
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul>
+              <li>
+                <h6>Front Suspension</h6>
+                <p class="text-muted">
+                  Öhlins upside-down air forks featuring 38mm stanchion tubes
+                  for extra rigidity and strength, specially developed for Cake.
+                  Adjustable for high-speed compression, low-speed compression
+                  and low-speed rebound. The forks are equipped with Öhlins
+                  advanced 3 stage air springs with individual setup for ride
+                  heights and bottoming resistance.
+                </p>
+              </li>
+              <li>
+                <h6>Rear suspension</h6>
+                <p class="text-muted">
+                  Type: 205mm Öhlins TTX22 shock with CAKE internals and spring.
+                  Used with linkage for optimal performance.
+                </p>
+              </li>
+              <li>
+                <h6>Drivetrain</h6>
+                <p class="text-muted">
+                  Type: Formula motorcycle disc brakes,<br />
+                  four pistons callipers.<br />
+                  Hand lever for front Chain/Belt: 420 chain with O-ring
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 4%">
+        <div class="row">
+          <div class="col-sm">
+            <img
+              src="./Assets/4/1.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+            <img
+              src="./Assets/4/4.png"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <div class="col-sm">
+            <img
+              src="./Assets/4/3.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+            <img
+              src="./Assets/4/2.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <div class="col-sm">
+            <img
+              src="./Assets/4/5.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+            <img
+              src="./Assets/4/6.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var dwidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
+
+      if (dwidth < 700) {
+        st = document.getElementById("adj");
+        st.classList.remove("proddesk");
+        st.classList.add("prodmob");
+        st = document.getElementById("ore");
+        st.classList.remove("vesor");
+        st.classList.add("vesormob");
+        ///No changes
+        st = document.getElementById("spc");
+        st.classList.remove("specPCink");
+        st.classList.add("specMOb");
+      }
+
+      function back() {
+        window.open("./index.html", "_self");
+      }
+      function order() {
+        window.open("./index.html#3", "_self");
+      }
+    </script>
+  </body>
+</html>

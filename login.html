@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RODE ACCOUNT</title>
+  </head>
+
+  <body style="background: #f5f5f5; width: 100%">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./alone.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDX_rDzOut6NZU8mMnluVOIBi1eodvKXiQ",
+        authDomain: "rode-96166.firebaseapp.com",
+        databaseURL: "https://rode-96166.firebaseio.com",
+        projectId: "rode-96166",
+        storageBucket: "rode-96166.appspot.com",
+        messagingSenderId: "835195424572",
+        appId: "1:835195424572:web:79faa9aca572e9851b5839",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <div style="height: 10px"></div>
+
+    <div style="margin-left: auto; margin-right: auto; width: 90%">
+      <figure
+        class="image cntr"
+        style="width: 70%; margin-top: 2%; max-width: 300px"
+      >
+        <img src="./Assets/RODE.png" />
+      </figure>
+
+      <figure
+        id="frm"
+        class="cntr"
+        style="width: 90%; margin-top: 2%; max-width: 500px; min-width: 280px"
+      ></figure>
+
+      <script src="./login.js"></script>
+    </div>
+  </body>
+</html>

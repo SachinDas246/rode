@@ -1,0 +1,323 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RODE</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./alone.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Teko:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDX_rDzOut6NZU8mMnluVOIBi1eodvKXiQ",
+        authDomain: "rode-96166.firebaseapp.com",
+        databaseURL: "https://rode-96166.firebaseio.com",
+        projectId: "rode-96166",
+        storageBucket: "rode-96166.appspot.com",
+        messagingSenderId: "835195424572",
+        appId: "1:835195424572:web:79faa9aca572e9851b5839",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+
+  <body class="darkbg">
+    <nav id="nv" class="navbar navbar-expand-lg fixed-top">
+      <a class="spaceworks_nav" href="./index.html">RODE</a>
+    </nav>
+
+    <div class="cnt">
+      <div class="sect" id="v1">
+        <div class="container" style="padding-top: 5%; height: 84%">
+          <div class="row">
+            <div class="col-sm">
+              <div class="cakesub">Kalk Cake</div>
+              <div class="cake">Race OR</div>
+              <div id="i1"></div>
+              <div class="sidebd box">
+                Engineered to promote performance, trail/enduro and free riding
+                in the back country, leaving nothing to chance.
+              </div>
+              <button
+                type="button"
+                style="margin-top: 20%"
+                class="btn btn-dark"
+                onclick="order(0)"
+              >
+                ORDER NOW
+              </button>
+              <button
+                type="button"
+                style="margin-top: 20%"
+                class="btn btn-primary"
+                onclick="openpage('./RaceOr.html')"
+              >
+                LEARN MORE
+              </button>
+            </div>
+            <div class="col-sm price" style="height: 40vh"></div>
+            <div id="s1" style="padding-left: 10%" class="col-sm leftboard">
+              <h3>Specifications</h3>
+              <ul class="list-group">
+                <li>Top speed: 90 km/h</li>
+                <li>Max permittable load 180kg</li>
+                <li>Power: 11 kW motor</li>
+                <li>Battery: 51.8 V , 50 Ah</li>
+                <li>
+                  Charging: 0-80%: 2 hours <br />
+                  0-100%: 3 hours
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="price">Starting at $13,000</p>
+      </div>
+      <div class="sect" id="v2">
+        <div class="container" style="padding-top: 5%; height: 84%">
+          <div class="row">
+            <div class="col-sm">
+              <div class="cakesub">Kalk Cake</div>
+              <div class="cake">INK Race</div>
+              <div id="i2"></div>
+              <div class="sidebd box">
+                Engineered for racing in kinship with the core aspects of the
+                kalk platform: light, quiet & clean.
+              </div>
+              <button
+                type="button"
+                style="margin-top: 20%"
+                class="btn btn-dark"
+                onclick="order(1)"
+              >
+                ORDER NOW
+              </button>
+              <button
+                type="button"
+                style="margin-top: 20%"
+                class="btn btn-primary"
+                onclick="openpage('./InkRace.html')"
+              >
+                LEARN MORE
+              </button>
+            </div>
+            <div class="col-sm price"></div>
+            <div id="s2" style="padding-left: 10%" class="col-sm leftboard">
+              <h3>Specifications</h3>
+              <ul class="list-group">
+                <li>Max speed: 90 km/h</li>
+                <li>Max permittable load 180kg</li>
+                <li>Torque: 42 Nm</li>
+                <li>Battery:50 Ah, 51.8 V</li>
+                <li>Charging: 0-100%: 3 hours</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="price">Starting at $11,000</p>
+      </div>
+      <div class="sect" id="v3">
+        <div class="container" style="padding-top: 5%; height: 84%">
+          <div class="row">
+            <div class="col-sm">
+              <div class="cakesub">Gogoro</div>
+              <div class="cake">Eeyo</div>
+              <div id="i3"></div>
+              <div class="sidebd box">
+                The Eeyo Smartwheel senses your effort and delivers the exact
+                power you need. Over the air update brings new features and
+                improve the riding experience every quarter.
+              </div>
+              <button
+                type="button"
+                style="margin-top: 20%"
+                class="btn btn-dark"
+                onclick="order(2)"
+              >
+                ORDER NOW
+              </button>
+              <button
+                type="button"
+                style="margin-top: 20%"
+                class="btn btn-primary"
+                onclick="openpage('./GogoroEeyo.html')"
+              >
+                LEARN MORE
+              </button>
+            </div>
+            <div class="col-sm price"></div>
+            <div id="s3" style="padding-left: 10%" class="col-sm leftboard">
+              <h3>Specifications</h3>
+              <ul class="list-group">
+                <li>Weight: 26 pounds</li>
+                <li>Range : Upto 30 Miles</li>
+                <li>Range with Eco assist:45 Miles</li>
+                <li>Charging Time: 0-100%: 2.5 hours</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="price">Starting at $5,000</p>
+      </div>
+      <div class="sect" id="v4">
+        <div class="container" style="padding-top: 5%; height: 84%">
+          <div class="row">
+            <div class="col-sm">
+              <div class="cakesub">VESPA</div>
+              <div class="cake">ELETTRICA</div>
+              <div id="i4"></div>
+              <div class="sidebd box">
+                The new mobility solution according to the most elegant and
+                beloved two-wheeled brand in the world that takes a step into
+                the future.
+              </div>
+              <button
+                type="button"
+                style="margin-top: 20%"
+                class="btn btn-dark"
+                onclick="order(3)"
+              >
+                ORDER NOW
+              </button>
+              <button
+                type="button"
+                style="margin-top: 20%"
+                class="btn btn-primary"
+                onclick="openpage('./VespaElettrica.html')"
+              >
+                LEARN MORE
+              </button>
+            </div>
+            <div class="col-sm price"></div>
+            <div id="s4" style="padding-left: 10%" class="col-sm leftboard">
+              <h3>Specifications</h3>
+              <ul class="list-group">
+                <li>Battery range: 100 km</li>
+                <li>Engine power: 4 kW</li>
+                <li>Battery energy: 4.2 kW/h</li>
+                <li>Weight:130 kg</li>
+                <li>Charging: 0-100%: 4 hours</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="price">Starting at $7,500</p>
+      </div>
+    </div>
+
+    <div id="odr" class="showcase blur">
+      <div class="showcase-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div id="bdnm" class="cakesub">VESPA</div>
+              <div id="itmnm" class="cake">ELETTRICA</div>
+              <img
+                id="im"
+                src="./Assets/h1.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+              <p id="pas" class="form-text text-muted" style="margin: 5%"></p>
+            </div>
+
+            <div class="col-sm-4">
+              <form>
+                <div id="Acnt"></div>
+                <div class="form-group">
+                  <h2>Delivery Location</h2>
+                  <small class="form-text text-muted"
+                    >The delivery location nearest to your Zip Code will be used
+                    to determine any applicable transportation fees.</small
+                  >
+                  <label style="margin-top: 10px" for="exampleInputEmail1"
+                    >Delivery Zip Code</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="f1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <h5>Enter Account Details</h5>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Full Name</label>
+                  <input type="text" class="form-control" id="f2" />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Email</label>
+                  <form class="form-inline">
+                    <input type="email" disabled class="form-control" id="f3" />
+                    <button
+                      class="btn btn-sm btn-outline-secondary"
+                      type="button"
+                      onclick="signout()"
+                    >
+                      LOG OUT
+                    </button>
+                  </form>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Phone Number</label>
+                  <input type="text" class="form-control" id="f4" />
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Address</label>
+                  <textarea class="form-control" id="f5" rows="3"></textarea>
+                </div>
+                <small class="form-text text-muted"
+                  >By entering my account details above, I agree to be contacted
+                  about RODE products, including through automated calls or
+                  texts. This is not a condition of purchase.</small
+                >
+
+                <button
+                  style="
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 10%;
+                  "
+                  type="submit"
+                  class="btn btn-primary"
+                  onclick="confirmorder()"
+                >
+                  Place An Order
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
